@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Prompt", sans-serif;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card {
+  min-width: 450px;
+  height: 500px;
+  padding: 20px;
+  margin: 0 0 16px 16px;
+  border: 1px solid gray;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 8px;
+}
+
+.card-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff5a5a;
+}
+.card-header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #9b9b9b;
+}
+.card-header h2:nth-child(3) {
+  margin-top: 8px;
+  font-weight: 300;
+}
+.card-header img {
+  width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.card-body {
+  padding: 20px 0;
+}
+
+.card-body .round {
+  display: flex;
+  align-items: center;
+}
+
+.card-body .round span {
+  color: #5f5f5f;
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 16px;
+}
+
+.current-round {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-round span {
+  font-weight: 600;
+  color: #ff5a5a;
+}
+
+.edit-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  color: #ff5a5a;
+  font-family: "Prompt", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 17.5px;
+  border: 1px solid #ff5a5a;
+  cursor: pointer;
+}
+.edit-score img {
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+}
+
+.round-active {
+  background-color: #2ecc71;
+  margin-right: 8px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.round-inactive {
+  background-color: #d8d8d8;
+  margin-right: 8px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
