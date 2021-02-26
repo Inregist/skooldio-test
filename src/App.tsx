@@ -12,7 +12,8 @@ function App() {
         "https://tcas-assets.skooldio.com/tmp/mock_tcaster_api.json"
       );
       const cards = data.map((d: any) => {
-        const item = {
+        const item: CardProps = {
+          id: d.id,
           faculty: {
             logo: d.logo,
             name: d.faculty.name,
